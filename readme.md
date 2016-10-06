@@ -572,7 +572,11 @@ IPython.display.Audio(data=inverted_MFCC_audio, rate=rate)
     [NbConvertApp] Converting notebook Python-Spectrograms-MFCC-and-Inversion.ipynb to markdown
     [NbConvertApp] Support files will be in Python-Spectrograms-MFCC-and-Inversion_files/
     [NbConvertApp] Making directory Python-Spectrograms-MFCC-and-Inversion_files
-    [NbConvertApp] Writing 551856 bytes to Python-Spectrograms-MFCC-and-Inversion.md
+    [NbConvertApp] Making directory Python-Spectrograms-MFCC-and-Inversion_files
+    [NbConvertApp] Making directory Python-Spectrograms-MFCC-and-Inversion_files
+    [NbConvertApp] Making directory Python-Spectrograms-MFCC-and-Inversion_files
+    [NbConvertApp] Making directory Python-Spectrograms-MFCC-and-Inversion_files
+    [NbConvertApp] Writing 1611276 bytes to Python-Spectrograms-MFCC-and-Inversion.md
 
 
 
