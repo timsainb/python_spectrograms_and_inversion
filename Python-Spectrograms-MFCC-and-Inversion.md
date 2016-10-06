@@ -1,4 +1,7 @@
 
+### Spectrograms, MFCC, and Inversion demo in jupyter/ipython
+This is just a bit of code that shows you how to make a spectrogram/sonogram in python using numpy, scipy, and a few functions written by <a href="https://gist.github.com/kastnerkyle/179d6e9a88202ab0a2fe">Kyle Kastner</a>. I also show you how to invert those spectrograms back into wavform, filter those spectrograms into MFCCs, and invert those spectrograms as well. This should prove to be a useful tool for those interested in generative modelling (as I am). For example, running spectrograms through an LSTM, VAE, GAN, <a href="https://timsainb.github.io/multi-gpu-vae-gan-in-tensorflow.html">VAE-GAN</a>, or experimenting with your own audio/waveform models. Check out the <a href="http://www.openslr.org/12/">LibriSpeech dataset.</a> for a 1000 hr dataset of transcripted speech from open source audio books. 
+
 
 ```python
 # iPython specific stuff
@@ -387,7 +390,7 @@ plt.title('Original Spectrogram')
 
 
 
-![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_10_1.png)
+![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_11_1.png)
 
 
 ### Inverting the Spectrogram
@@ -431,7 +434,7 @@ plt.title('Recovered Spectrogram')
 
 
 
-![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_13_1.png)
+![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_14_1.png)
 
 
 ### MFCC Compression
@@ -466,7 +469,7 @@ ax[1].set_title('MFCC Inversion Filter')
 
 
 
-![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_16_1.png)
+![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_17_1.png)
 
 
 
@@ -492,7 +495,7 @@ plt.title('MFCC Spectrogram')
 
 
 
-![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_18_1.png)
+![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_19_1.png)
 
 
 
@@ -537,7 +540,7 @@ plt.title('Inverted MFCC Spectrogram')
 
 
 
-![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_21_1.png)
+![png](Python-Spectrograms-MFCC-and-Inversion_files/Python-Spectrograms-MFCC-and-Inversion_22_1.png)
 
 
 
@@ -566,6 +569,8 @@ IPython.display.Audio(data=inverted_MFCC_audio, rate=rate)
 
 ```python
 !jupyter nbconvert --to markdown Python-Spectrograms-MFCC-and-Inversion.ipynb
+!jupyter nbconvert --to HTML Python-Spectrograms-MFCC-and-Inversion.ipynb
+
 !cp Python-Spectrograms-MFCC-and-Inversion.md readme.md
 ```
 
@@ -576,7 +581,9 @@ IPython.display.Audio(data=inverted_MFCC_audio, rate=rate)
     [NbConvertApp] Making directory Python-Spectrograms-MFCC-and-Inversion_files
     [NbConvertApp] Making directory Python-Spectrograms-MFCC-and-Inversion_files
     [NbConvertApp] Making directory Python-Spectrograms-MFCC-and-Inversion_files
-    [NbConvertApp] Writing 1611276 bytes to Python-Spectrograms-MFCC-and-Inversion.md
+    [NbConvertApp] Writing 1611601 bytes to Python-Spectrograms-MFCC-and-Inversion.md
+    [NbConvertApp] Converting notebook Python-Spectrograms-MFCC-and-Inversion.ipynb to HTML
+    [NbConvertApp] Writing 2393494 bytes to Python-Spectrograms-MFCC-and-Inversion.html
 
 
 
